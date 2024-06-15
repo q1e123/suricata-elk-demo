@@ -43,6 +43,11 @@ docker-compose up -d
 
 Open your browser and navigate to `http://localhost:5601`.
 
+You should see the alerts in a similar fashion to the following:
+
+![Kibana Dashboard](imgs/elk.png)
+
+
 ## Known issues
 
 ### vm.max_map_count
