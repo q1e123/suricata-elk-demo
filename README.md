@@ -5,7 +5,6 @@ This project sets up a demo environment for Suricata using Docker and the ELK st
 ## Prerequisites
 
 - Docker
-- Docker Compose
 
 ## Getting Started
 
