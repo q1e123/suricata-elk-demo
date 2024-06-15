@@ -32,3 +32,19 @@ docker-compose up -d
 ### Step 4: Access Kibana
 
 Open your browser and navigate to `http://localhost:5601`.
+
+## Known issues
+
+### vm.max_map_count
+
+If you encounter the following error:
+
+```
+max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+```
+
+You can increase the `vm.max_map_count` by running the following command:
+
+```sh
+sudo sysctl -w vm.max_map_count=262144
+```
