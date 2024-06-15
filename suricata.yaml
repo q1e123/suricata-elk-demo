@@ -137,12 +137,12 @@ outputs:
               # than one IP address is present, the last IP address will be the
               # one taken into consideration.
               header: X-Forwarded-For
-        #- http:
+        - http:
             #extended: yes     # enable this for extended logging information
             # custom allows additional http fields to be included in eve-log
             # the example below adds three additional fields when uncommented
             #custom: [Accept-Encoding, Accept-Language, Authorization]
-        #- dns:
+        - dns:
             # control logging of queries and answers
             # default yes, no to disable
             #query: yes     # enable logging of DNS queries
@@ -150,7 +150,7 @@ outputs:
             # control which RR types are logged
             # all enabled if custom not specified
             #custom: [a, aaaa, cname, mx, ns, ptr, txt]
-        #- tls:
+        - tls:
         #    extended: yes     # enable this for extended logging information
         - files:
             force-magic: no   # force logging magic on all logged files
