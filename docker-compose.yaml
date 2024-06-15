@@ -1,0 +1,14 @@
+version: '3'
+services:
+  suricata:
+    image: jasonish/suricata:latest
+    container_name: suricata
+    volumes:
+      - ./suricata.yaml:/etc/suricata/suricata.yaml
+      - ./rules:/var/lib/suricata/rules
+      - ./logs:/var/log/suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    command: ["/usr/bin/suricata", "-c", "/etc/suricata/suricata.yaml", "-i", "wlp4s0"]
