@@ -48,3 +48,17 @@ You can increase the `vm.max_map_count` by running the following command:
 ```sh
 sudo sysctl -w vm.max_map_count=262144
 ```
+
+### No alerts generated
+
+If you don't see any alerts in Kibana, you may need to modify the `docker-compose.yaml` file to sniff the correct interface. Another issue may also be that the rules are not being loaded correctly. You can check the Suricata logs by running the following command:
+
+```sh
+docker-compose logs suricata
+```
+
+You may also create a test rule to see if Suricata is working correctly. For example, you can create a rule in the `suricata/rules` directory with the following content:
+
+```
+alert icmp any any -> any any (msg:"ICMP test"; sid:1000001;)
+```
