@@ -20,6 +20,9 @@ cd suricata-elk-demo
 
 Modify the `suricata/suricata.yaml` file to suit your needs. This may also include adding rules to the `suricata/rules` directory.
 
+**You may also want to change `docker-compose.yaml` in order to sniff your intended interface.**
+
+
 ### Step 3: Start the Services
 
 ```sh
