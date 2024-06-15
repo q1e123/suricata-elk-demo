@@ -22,6 +22,17 @@ Modify the `suricata/suricata.yaml` file to suit your needs. This may also inclu
 **You may also want to change `docker-compose.yaml` in order to sniff your intended interface.**
 
 
+#### Downloading Suricata Rules
+
+You can download Emerging Threats Suricata rules using the following commands:
+
+```sh
+mkdir rules
+curl -o rules/suricata.rules https://rules.emergingthreats.net/open/suricata/emerging.rules.tar.gz
+tar -xvzf emerging.rules.tar.gz -C rules
+```
+
+
 ### Step 3: Start the Services
 
 ```sh
