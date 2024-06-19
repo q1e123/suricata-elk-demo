@@ -1,6 +1,6 @@
 # suricata-elk-demo
 
-This project sets up a demo environment for Suricata using Docker and the ELK stack (Elasticsearch, Logstash, Kibana). The setup helps in analyzing network traffic and visualizing the results.
+This project sets up a demo environment for Suricata using Docker and the ELK stack (Elasticsearch, Logstash, Kibana). The setup helps in analyzing network traffic and visualizing the results. In case you want to deploy suricata using PFSense, refer to [this tutorial](https://www.youtube.com/watch?v=u1gZrJEQ_30).
 
 ## Prerequisites
 
